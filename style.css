@@ -8,6 +8,19 @@ body {
   height: 100%;
 }
 
+.button-container {
+  text-align: center;
+}
+button {
+  margin: 10px;
+  width: 150px;
+  height: 100px;
+  background: lightcoral;
+  border: none;
+  border-radius: 5%;
+  cursor: pointer;
+}
+
 .container {
   display: flex;
   flex-wrap: wrap;
@@ -16,7 +29,6 @@ body {
   background: lightblue;
   justify-content: space-evenly;
   align-items: space-evenly;
-  /* overflow: auto; */
 }
 
 .col {

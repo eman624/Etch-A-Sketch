@@ -1,3 +1,5 @@
+let gridSize = 0;
+
 const container = document.querySelector(".container");
 
 for (var col = 1; col <= 16; col++) {
@@ -17,7 +19,13 @@ boxes.forEach((box) => {
   box.addEventListener("mouseover", () =>
     box.setAttribute("style", "background:green")
   );
+
   box.addEventListener("mouseout", () =>
     box.setAttribute("style", "background: blue")
   );
+});
+
+const button = document.querySelector("button");
+button.addEventListener("click", () => {
+  gridSize = prompt("enter number");
 });

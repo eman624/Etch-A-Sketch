@@ -16,7 +16,7 @@ body {
   background: lightblue;
   justify-content: space-evenly;
   align-items: space-evenly;
-  overflow: auto;
+  /* overflow: auto; */
 }
 
 .col {
@@ -33,6 +33,6 @@ body {
   background: blue;
 }
 
-.box:hover {
+/* .box:hover {
   background: green;
-}
+} */

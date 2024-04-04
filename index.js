@@ -1,20 +1,5 @@
 const container = document.querySelector(".container");
 
-// for (var col = 1; col <= 16; col++) {
-//   const column = document.createElement("div");
-//   column.classList.add("col");
-//   column.textContent = col;
-//   container.appendChild(column);
-// }
-
-// const column = document.querySelector(".col");
-
-// for (var row = 1; row <= 16; row++) {
-//   const box = document.createElement("div");
-//   box.classList.add("box");
-//   column.appendChild(box);
-// }
-
 for (var col = 1; col <= 16; col++) {
   const column = document.createElement("div");
   column.classList.add("col");
@@ -25,3 +10,14 @@ for (var col = 1; col <= 16; col++) {
   }
   container.appendChild(column);
 }
+
+const boxes = document.querySelectorAll(".box");
+
+boxes.forEach((box) => {
+  box.addEventListener("mouseover", () =>
+    box.setAttribute("style", "background:green")
+  );
+  box.addEventListener("mouseout", () =>
+    box.setAttribute("style", "background: blue")
+  );
+});

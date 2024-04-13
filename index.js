@@ -1,4 +1,5 @@
 const container = document.querySelector(".container");
+const resetButton = document.querySelector(".reset-button");
 
 function createGrid(gridSize) {
   for (var i = 1; i <= gridSize; i++) {
@@ -6,7 +7,7 @@ function createGrid(gridSize) {
     row.classList.add("grid-row");
 
     for (var j = 1; j <= gridSize; j++) {
-      const widthAndHeight = 1000 / gridSize;
+      const widthAndHeight = 960 / gridSize;
       const gridBox = document.createElement("div");
       gridBox.classList.add("grid-box");
       gridBox.style.width = `${widthAndHeight}px`;
@@ -26,7 +27,14 @@ function createGrid(gridSize) {
   }
 }
 
-createGrid(10);
+resetButton.addEventListener("click", () => {
+  let newGridSize = 0;
+  do {
+    newGridSize = Number(prompt("enter number less than 100"));
+  } while (newGridSize > 100 || newGridSize < 0);
+
+  createGrid(newGridSize);
+});
 
 /* ******************************************************** */
 

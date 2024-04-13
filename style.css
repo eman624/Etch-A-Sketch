@@ -9,12 +9,7 @@ body {
   height: 100%;
 }
 
-.button-container {
-  text-align: center;
-}
-
 button {
-  margin: 10px;
   width: 150px;
   height: 100px;
   background: lightcoral;
@@ -23,8 +18,14 @@ button {
   cursor: pointer;
 }
 
+.reset-button {
+  display: block;
+  margin: 10px auto;
+}
+
 .container {
-  margin: auto;
+  width: 960px;
+  margin: 0 auto;
 }
 
 .grid-row {
